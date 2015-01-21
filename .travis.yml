@@ -4,6 +4,10 @@ node_js:
 
 script: "echo to infinity and beyond!"
 
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
 deploy:
   provider: s3
   access_key_id: AKIAJOLWV5HPI2CLKW7Q
